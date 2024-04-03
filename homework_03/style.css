@@ -1,0 +1,23 @@
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    margin-left: 30px;    
+}
+
+.paragraph {
+    background-color: lightyellow;
+    display: block;
+    border: 3px solid coral;
+    margin-left: 30px;
+    margin-right: 200px;
+    text-align: left;
+    font-size: large;
+    font-weight: bold;
+}
+
+.highlight {
+    display: inline-block;
+    border: 3px solid blue;
+}
