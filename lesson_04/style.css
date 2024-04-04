@@ -1,0 +1,56 @@
+* {
+    box-sizing: border-box;
+}
+
+header {
+    background-color: black;
+    width: 100%;
+    height: 120px;
+    border: 4px solid orangered;
+    margin-top: 40px;
+    margin-bottom: 70px;
+    padding: 10px;
+}
+
+.logo {
+    width: 100px;
+    margin-bottom: 5%;
+}
+
+.container {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 32px;
+}
+
+body {
+    background-color: silver;
+}
+
+h1 {
+    text-align: center;
+    color: blueviolet;
+    font-size: 100px;
+    font-family:cursive
+}
+
+.new_releases {   
+    width: 100%;
+    min-height: 450px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    border: 10px solid orangered;
+    background-color: black;
+}
+
+.new_releases > div > img {
+    width: 300px;
+    height: 450px;
+    margin: 10px;
+}
