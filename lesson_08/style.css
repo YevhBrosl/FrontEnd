@@ -33,9 +33,9 @@ body {
 
 .top_header {
     width: 100%;
-    height: 70px; 
-    background-color: #ffffff;   
-    border-bottom: 2px solid darkgrey; 
+    height: 70px;
+    background-color: #ffffff;
+    border-bottom: 2px solid darkgrey;
 }
 
 .bottom_header {
@@ -43,24 +43,24 @@ body {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    height: 70px; 
-    background-color: #ffffff;     
-} 
+    height: 70px;
+    background-color: #ffffff;
+}
 
 .bottom_header>.nav {
-    width: 100%;
+    
     height: 70px;
     display: flex;
-    justify-content: space-between;
-    align-items: center;    
+    /* justify-content: space-between; */
+    align-items: center;
 }
 
 .header_title {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    align-items: start;   
-    margin-left: 20px; 
+    align-items: start;
+    margin-left: 20px;
 }
 
 .header_title:hover {
@@ -82,12 +82,14 @@ body {
 }
 
 .menu {
-    width: 650px;
-    height: 70px;
+    /* width: 650px; */
+    height: 100%;
+    gap: 20px;
     display: flex;
     justify-content: space-between;
-    align-items: end;
-    margin-bottom: 25px;
+    align-items: center;
+    margin-right: 25px;
+    /* margin-bottom: 25px; */
 }
 
 .menu_link {
@@ -107,15 +109,16 @@ body {
     width: 162px;
     min-height: 50px;
     display: flex;
-    justify-content: space-between;    
-    margin-right: 30px;    
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 30px;
 }
 
 .caption {
     font-family: "Arial";
     font-weight: 400;
     font-size: 11px;
-    color: #000000;    
+    color: #000000;
 }
 
 .icon {
@@ -127,18 +130,15 @@ body {
 }
 
 .fa-universal-access {
-    width: 32px;
-    height: 32px;
+    font-size: 30px;
 }
 
 .fa-magnifying-glass {
-    width: 32px;
-    height: 32px;    
+    font-size: 30px;
 }
 
 .fa-bars {
-    width: 32px;
-    height: 32px;
+    font-size: 30px;
 }
 
 .icon:hover {
@@ -202,7 +202,7 @@ h3 {
     width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;    
+    align-items: center;
 }
 
 .section2>h2 {
@@ -213,7 +213,7 @@ h3 {
     width: 980px;
     height: 420px;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(321px, 1fr));    
+    grid-template-columns: repeat(auto-fit, minmax(321px, 1fr));
 }
 
 .card {
@@ -231,10 +231,10 @@ h3 {
 
 .card>span>.link {
     color: #0047D3;
-    text-decoration: none;    
+    text-decoration: none;
 }
 
-.card>span>.link:hover {    
+.card>span>.link:hover {
     text-decoration: underline;
 }
 
