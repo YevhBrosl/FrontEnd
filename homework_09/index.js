@@ -4,6 +4,7 @@ clonedBtn.id = 'magic-btn-2';
 clonedBtn.innerText = 'Я изменю тебя';
 clonedBtn.className = 'second-btn';
 //clonedBtn.classList.add("second-btn");
+//clonedBtn.setAttribute('type', 'button')
 clonedBtn.style.backgroundColor = "#a78b71"
 clonedBtn.style.color = "white"
 
