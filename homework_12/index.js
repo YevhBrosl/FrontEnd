@@ -1,15 +1,15 @@
 // Задание 1
 // Создайте стрелочную функцию, которая бы принимала массив и цифру, возвращала бы элемент массива под этим индексом. Если такого индекса нет в массиве - выведите в консоль "No such index in array"
 
-const arrayStringNumber = (array, index) => {
-    if (index >= 0 && index <= array.length) {
-        console.log(array[index])
+const getElementByIndex = (array, index) => {
+    if (index >= 0 && index < array.length) {
+        return array[index]
     } else {
-        console.log("No such index in array")
+        return "No such index in array"
     }
 }
 
-arrayStringNumber(['Hello', 'world', 'JS', 'Java'], 12)
+console.log(getElementByIndex(['Hello', 'world', 'JS', 'Java'], 3))
 
 // ### Задание 2 *
 // Создайте функцию, которая бы принимала бы следующие параметры:
