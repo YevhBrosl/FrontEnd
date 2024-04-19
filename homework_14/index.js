@@ -89,9 +89,9 @@ console.log(heroNamesWithA)
 
 // 'Anakin Skywalker is a Jedi. Age: 25' 'Han Solo is not a Jedi. Age: 35'
 
-let message = (starWarsHeroes) => {
+const message = (starWarsHeroes) => {
     for (let hero of starWarsHeroes) {
-        let jedi = (hero.isJedi === true) ? 'is a Jedi' : 'is not a Jedi'
+        let jedi = hero.isJedi ? 'is a Jedi' : 'is not a Jedi'
         console.log(`${hero.name} ${jedi}. Age: ${hero.age}`)
     }
 }
