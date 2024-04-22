@@ -22,8 +22,6 @@ console.log(carsString);
 const sorted = cars
     .sort((car1, car2) => car2.year - car1.year)
     .map(car => (car.brand + ' ' + car.model))
-    .join(' - ')
-    .split(' - ')
     .reverse()
     .join(' - ')
 
@@ -36,24 +34,27 @@ console.log(sorted)
 
 const fruits = ['Apple', 'Orange', 'Cherry', 'Peach', 'Banana']
 
-const transformedFruits = fruits
-    .map(fruit => fruit.toLowerCase())
+const transformedArray = array => array
+    .map(el => el.toLowerCase())
     .sort()
-    .map(fruit => fruit.split('').reverse().join(''))
-    .map(fruit => fruit.charAt(0).toUpperCase() + fruit.slice(1))
+    .map(el => el.split('').reverse().join(''))
+    .map(el => el.charAt(0).toUpperCase() + el.slice(1))
     .join(', ');
 
-console.log(transformedFruits)
+console.log(transformedArray(fruits))
 
 // Задание 4
 // Напиши функцию, которая удаляет все нечетные числа и выдает массив отсортированных чисел задом наперед, а также число - их сумму в шаблонной строке.
 
 const numbers = [3, 56, 7, 4, 28, 45, 12, 9];
 
-const sortedEven = numbers
-    .filter(number => number % 2 === 0)
-    .sort((number1, number2) => number2 - number1)
+const sortNumbers = array => {
+    const filteredNumbers = array
+        .filter(el => el % 2 === 0)
+        .sort((el1, el2) => el2 - el1)
+    return `Общее значение: ${filteredNumbers.reduce(
+        (acc, num) => acc + num, 0
+    )}, отсортированный массив: ${filteredNumbers.join(', ')}`
+}
 
-const sortedEvenSum = sortedEven.reduce((acc, number) => acc + number, 0)
-
-console.log(`Сумма четных чисел: ${sortedEvenSum}. Отсортированные числа: ${sortedEven.join(', ')}.`)
+console.log(sortNumbers(numbers))
