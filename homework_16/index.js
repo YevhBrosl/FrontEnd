@@ -23,7 +23,7 @@ console.log(heroesAndVillains1)
 
 const newHeroesAndVillains = heroesAndVillains.map(hero =>
   hero.hero == 'Captain America'
-    ? { hero: 'Captain America', name: 'The First Avenger', age: 120, isAvenger: true }
+    ? {...hero, name: 'The First Avenger', age: hero.age + 10}
     : hero
 )
 
@@ -54,7 +54,7 @@ const getHeroAges = (heroes) => {
     .sort((hero1, hero2) => hero1.age - hero2.age)
     .map(hero => hero.age)
     .reverse()
-    
+
     console.log(ages)
 }
  getHeroAges(heroes)
