@@ -27,4 +27,4 @@ class Rose extends Plant {
 
 const rose = new Rose(70, 2, 5)
 rose.grow()
-console.log(rose.height)
+console.log(rose)
