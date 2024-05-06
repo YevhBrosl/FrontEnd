@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     display: flex;
@@ -6,10 +10,6 @@ body {
     background-image: url('background.jpg');
     background-size: cover;
     background-position: center;
-}
-
-* {
-    box-sizing: border-box;
 }
 
 header {
@@ -184,7 +184,6 @@ main {
     width: 80%;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-
     padding-top: 50px;
     gap: 50px;
     grid-auto-rows: 500px;

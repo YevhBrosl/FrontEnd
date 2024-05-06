@@ -1,7 +1,6 @@
-async function getWeather() {
-    const loader = document.createElement('div')    
-    loader.classList.add('loader')
-    document.body.appendChild(loader)
+const loader = document.querySelector('#loader')
+
+async function getWeather() {    
 
     try {
         const res = await fetch('https://get.geojs.io/v1/ip/geo.json')
